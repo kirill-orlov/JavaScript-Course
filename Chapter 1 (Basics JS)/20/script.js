@@ -20,7 +20,7 @@ number === 50 ? console.log("Ok") : console.log("Error!");
 //Switch
 //Switch всегда проверяет на строгое соответствие (===)
 
-const numSw = '50';
+const numSw = '5016';
 
 switch (numSw) {
     case '49':
