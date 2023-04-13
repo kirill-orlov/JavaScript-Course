@@ -20,6 +20,7 @@ function start() {
     while(numberOfFilms == "" || numberOfFilms == undefined || numberOfFilms == null || isNaN(numberOfFilms)) {
         numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
     }
+    numberOfFilms.trim();
 }
 
 start();
@@ -38,12 +39,13 @@ function rememberMyFilms() {
         const a = prompt("Просмотренный фильм: ", "");
         const b = prompt("Оценка: ", "");
         if (a != null && b != null && a != "" && b != "" && a.length < 50 && b.length < 50) {
+            a.trim();
+            b.trim();
             personalMovieDB["movies"][a] = b;
             console.log("Success");
             i++;
         } else {
             console.log("Error");
-            if (i <= 0) i--;
         }     
     } while (i < 2);
 }
