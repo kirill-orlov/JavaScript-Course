@@ -6,7 +6,7 @@ console.log(d.trim());
 // Test Callback
 function first() {
     // Do something
-    setTimeout(function() {
+    setTimeout(function () {
         console.log(1);
     }, 500); // Задержка выполнения
 }
@@ -29,7 +29,7 @@ function done() {
     console.log("Я прошёл этот урок!");
 }
 
-learnJS('JavaScript', function() {
+learnJS('JavaScript', function () {
     // This is all a argument. 2 аргумент - это анонимная функция. Но можно передать и обычную, об этом ниже
     console.log("Я прошёл этот урок!");
 });
