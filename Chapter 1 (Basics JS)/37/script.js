@@ -69,9 +69,9 @@ const personalMovieDB = {
         (personalMovieDB.privat === false) ? personalMovieDB.privat = true : personalMovieDB.privat = false
     }
 };
-// personalMovieDB.getCount();
-// personalMovieDB.getMovies();
-// personalMovieDB.getPersonalLevel();
+personalMovieDB.getCount();
+personalMovieDB.getMovies();
+personalMovieDB.getPersonalLevel();
 personalMovieDB.getYourGenres();
 personalMovieDB.toggleVisibleMyDB();
 personalMovieDB.showMyDB(personalMovieDB.privat);
